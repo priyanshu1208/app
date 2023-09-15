@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Model</h1>
+    {% if result %}
+        <p>{{result}}</p>
+    {% endif %}
+    <form action="/predict" method ="post">
+        <label for="">State_Code</label><br>
+        <input type="text" name="State" id=""><br><br>
+
+        <label for="">Type</label><br>
+        <input type="text" name="Type" id=""><br><br>
+
+        <label for="">Judge_Label</label><br>
+        <input type="text" name="Judge_Label" id=""><br><br>
+
+            <input type="submit" value="Submit" name ="Submit"><br><br>
+    </form>
+    
+</body>
+</html>
